@@ -1,0 +1,13 @@
+.header{
+background-color: #1C1C1C;
+color: wheat;
+height: 10%;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+h1{
+    border: 1px solid rgb(68,67,67);
+    padding: .10rem 15%;
+    border-radius: 5px;
+}
