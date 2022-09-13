@@ -1,4 +1,7 @@
-import { NgModule } from '@angular/core';
+import { TecnicoReadComponent } from './views/components/tecnico/tecnico-read/tecnico-read.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
+
+import { NgModule, Component } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
 
@@ -30,7 +33,8 @@ import { HomeComponent } from './views/components/home/home.component';
     HeaderComponent,
     FooterComponent,
     NavComponent,
-    HomeComponent
+    HomeComponent,
+    TecnicoReadComponent
   ],
   imports: [
     BrowserModule,
@@ -47,7 +51,9 @@ import { HomeComponent } from './views/components/home/home.component';
     MatButtonModule,
     MatListModule,
     MatCardModule,
-    MatTableModule
+    MatTableModule,
+    MatPaginatorModule,
+  
 
   ],
   providers: [],
