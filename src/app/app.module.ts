@@ -7,7 +7,7 @@ import { BrowserModule } from '@angular/platform-browser';
 
 
 import { HttpClientModule } from '@angular/common/http';
-import { FormsModule } from '@angular/forms';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 import { MatButtonModule } from '@angular/material/button';
 import { MatCardModule } from '@angular/material/card';
 import { MatDatepickerModule } from '@angular/material/datepicker';
@@ -27,6 +27,7 @@ import { NavComponent } from './views/components/template/nav/nav.component';
 import { HomeComponent } from './views/components/home/home.component';
 import { TecnicoCreateComponent } from './views/components/tecnico/tecnico-create/tecnico-create.component';
 import { MatSnackBarModule } from '@angular/material/snack-bar';
+import { TecnicoUpdateComponent } from './views/components/tecnico/tecnico-update/tecnico-update.component';
 
 
 @NgModule({
@@ -37,7 +38,8 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     NavComponent,
     HomeComponent,
     TecnicoReadComponent,
-    TecnicoCreateComponent
+    TecnicoCreateComponent,
+    TecnicoUpdateComponent
   ],
   imports: [
     BrowserModule,
@@ -45,6 +47,7 @@ import { MatSnackBarModule } from '@angular/material/snack-bar';
     BrowserAnimationsModule,
     MatToolbarModule,
     FormsModule,
+    ReactiveFormsModule,
     HttpClientModule,
     MatSelectModule,
     MatInputModule,
